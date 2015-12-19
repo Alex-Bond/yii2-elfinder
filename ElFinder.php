@@ -71,7 +71,7 @@ class ElFinder extends BaseWidjet
     {
         \mihaildev\elfinder\Assets::register($view);
         return ArrayHelper::merge([
-            'url' => Yii::$app->urlManager->createUrl(self::getConnectUrl($controller))
+            'url' => self::getConnectUrl($controller)
         ], $options);
     }
 
